@@ -1,0 +1,86 @@
+.logo{
+    color: white;
+}
+
+.bg{
+    background: linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../IMAGES/nc-state-gfa3d2d060_1280.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 46px;
+    
+}
+
+.contact{
+    background-color: rgba(0, 0, 0, 0.541);
+    margin-top: 30px;
+    border-radius: 20px;
+    align-content: center;
+}
+.head{
+    background-color: #ff7200;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}
+p{
+    color: white;
+}
+.name{
+    font-weight: bold;
+    color: #ff7200;
+    font-size: 16px;
+    font-family: Verdana;
+}
+.marker{
+    background-color: #ff7200;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#whatsapp{
+    width: 40px;
+    margin-top: 10px;
+}
+.navbar-nav{
+    float: none!important;
+}
+@media (min-width: 768px) {
+    .navbar-nav{
+        float: right!important;
+    }
+}
+label{
+    color: #ff7200;
+}
+
+.mybtn{
+    margin-top: 20px;
+    background-color: #ff7200;
+    color: white;
+    float: right;
+    margin-right: 40px;
+}
+.form-text{
+    display: block;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    border-width: 2px;
+    background-color: transparent;
+    color: white;
+}
+.form-text:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.466);
+    font-size: small;
+}

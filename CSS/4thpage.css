@@ -1,0 +1,96 @@
+.form-text {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: black;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+
+  .dash{
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-color: #ff7200;
+      background: transparent;
+      color: white;
+  }
+
+  .dash:focus{
+      outline: none;
+  }
+
+  .backg{
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+      border: none;
+      background: transparent;
+  }
+
+  .head{
+      background-color:  #ff7200;
+      border-radius: 50px;
+      height: 45px;
+      text-align: center;
+      color: white;
+  }
+
+  .bg{
+    background: linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../IMAGES/johns-hopkins-university-g9d07c096b_1920.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 46px;
+}
+label,p,small{
+    color: white;
+}
+::placeholder{
+    color: black;
+}
+
+.form-group span{
+    color: white;
+}
+.mybtn{
+    background-color: #ff7200;
+    color: white;
+}
+.logo{
+    color: white;
+}
+
+a{
+    cursor: pointer;
+}
+.map{
+    background-color: #ff7200;
+    color: white;
+    position: relative;
+    top: -40px;
+    left: 68px;
+}
+.myimg{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+.navbar-nav{
+    float: none!important;
+}
+@media (min-width: 768px) {
+    .navbar-nav{
+        float: right!important;
+    }
+}
+

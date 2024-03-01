@@ -1,0 +1,84 @@
+.bg{
+    background: linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../IMAGES/glasses-g3b5a8015e_1920.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 46px;
+    
+}
+
+.info-div {
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.info-div p,li{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.head{
+    background-color:  #ff7200;
+    border-radius: 50px;
+    height: 45px;
+    text-align: center;
+    color: white;
+}
+
+.faq-button{
+    height: 40px;
+    width: 80%;
+    background: transparent;
+    color: white;
+    border-radius: 2px;
+    border-color: #ff7200;
+    border-style: solid;
+    border-width: 1px;
+    margin: 20px;
+    margin-left: 45px;
+    transition: bacground-color,0.5s;
+}
+
+.faq-button:hover{
+    background-color: #ff7200;
+}
+
+.faq-button:focus{
+    outline: none;
+}
+
+.faq-div{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: -21px;
+    right: -45px;
+}
+
+.mybtn{
+    background-color: #ff7200;
+    color: white;
+}
+
+.logo{
+    color: white;
+}
+.navbar-nav{
+    float: none!important;
+}
+@media (min-width: 768px) {
+    .navbar-nav{
+        float: right!important;
+    }
+}

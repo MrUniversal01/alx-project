@@ -1,0 +1,68 @@
+.bg{
+    background: linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../IMAGES/books-g3e27b0adb_1920.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 109vh;
+    margin-top: 46px;
+    
+}
+
+label{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.input-line{
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #ff7200;
+    width: 200px;
+    color: white;
+    
+}
+
+::placeholder{
+    color: white;
+    font-size: 11px;
+}
+
+.form-box{
+    float: right;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.527),rgba(0, 0, 0, 0.582), rgba(255, 255, 255, 0.527));
+    width: 250px;
+    padding: 25px;
+    border-radius: 20px;
+    position: absolute;
+    top: 408px;
+    right: 60px;
+}
+
+.intro{
+    position: absolute;
+    top: 77px;
+}
+
+.mybtn{
+    background-color: #ff7200;
+    color: white;
+}
+.logo{
+    color: white;
+}
+a{
+    cursor: pointer;
+}
+.navbar-nav{
+    float: none!important;
+}
+@media (min-width: 768px) {
+    .navbar-nav{
+        float: right!important;
+    }
+}
