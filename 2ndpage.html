@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data form</title>
+    <link rel="stylesheet" href="../CSS/2ndpage.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.css">
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <a href="#" class="navbar-brand" style="color: #ff7200;">PaciFic-<span class="logo">Coast</span> <span class="glyphicon glyphicon-globe logo"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+          <ul class="nav navbar-nav">
+            <li><a onclick="home();">Home</a></li>
+            <li class="active"><a href="#">Data-Form</a></li>
+            <li><a onclick="complete();">Clearance-Form</a></li>
+            <li><a onclick="complete();">File-Upload/Acceptance</a></li>
+            <li><a onclick="contact();">Contact</a></li>
+            <li><a onclick="info();">Screening-Info</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="bg">
+        <div style="margin-top: 19px;" class="container backg">
+            <div class="head" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 20px; padding-top: 9px;">PERSONAL DATA FORM</h3>
+            </div>
+            <form action="../HTML/3rdpage.html" method="GET">
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="surname">SURNAME</label>
+                        <input type="text" name="surname" placeholder="Enter Surname" class="form-text" id="text0" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="othernames">OTHER NAMES IN FULL</label>
+                        <input type="text" name="othernames" placeholder="Enter Othernames" class="form-text" id="text1" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="faculty">FACULTY</label>
+                        <input type="text" name="faculty" placeholder="Enter Faculty" class="form-text" id="text2" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="department">DEPARTMENT</label>
+                        <input type="text" name="department" placeholder="Enter Department" class="form-text" id="text3" required/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">YEAR OF ENTRY(example 2021/2022)</label>
+                    <input type="text" name="entryyear" placeholder="Enter year of admission" class="form-text" id="text4" required/>
+                    </div>
+        
+                <div class="form-group">
+                    <label for="">SEX:</label>
+                    <input type="radio" name="sex" required/><span>MALE</span>
+                    <input type="radio" name="sex"/><span>FEMALE</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="">TITLE:</label>
+                    <input type="radio" name="title" required/><span>MR</span>
+                    <input type="radio" name="title"/><span>MRS</span>
+                    <input type="radio" name="title"/><span>MISS</span>
+                    <input type="radio" name="title"/><span>DR</span>
+                    <input type="radio" name="title"/><span>REV</span>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-4 col-md-6">
+                        <label for="nationality">NATIONALITY</label>
+                        <input type="text" name="nationality" placeholder="Enter Nationality" class="form-text" id="text5" required/>
+                    </div>
+
+                    <div class="form-group col-lg-4 col-md-6">
+                        <label for="state">STATE OF ORIGIN</label>
+                        <input type="text" name="state" placeholder="Enter State" class="form-text" id="text6" required/>
+                    </div>
+
+                    <div class="form-group col-lg-4 col-md-6">
+                        <label for="lga">L.G.A</label>
+                        <input type="text" name="lga" placeholder="Enter Local Government Area" class="form-text" id="text7" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="birth">DATE OF BIRTH</label>
+                        <input type="date" name="birth" class="form-text" id="text8" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="birthplace">PLACE OF BIRTH</label>
+                        <input type="text" name="birthplace" placeholder="Enter Place of Birth" class="form-text" id="text9" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="">BURSARY OR SCHOLARSHIP:</label>
+                        <input type="radio" name="scholarship" required/><span>YES</span>
+                        <input type="radio" name="scholarship"/><span>NO</span>
+                    </div>
+
+                    <div class="form-group  col-lg-6 col-md-6">
+                        <label for="award">AWARDED BY</label>
+                        <input type="text" name="award" class="form-text" id="award" placeholder="If yes, awarded by"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="residence">HALL OF RESIDENCE(off campus address if not in the hall of residence)</label>
+                        <input type="text" name="residence" placeholder="Enter Hall Of Residence" class="form-text" id="text10" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="permanentaddress">PERMANENT ADDRESS</label>
+                        <input type="text" name="permanentaddress" placeholder="Enter Permanent Address" class="form-text" id="text11" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="sponsorN">SPONSOR'S NAME</label>
+                        <input type="text" name="sponsorN" placeholder="Enter Sponsors Name" class="form-text" id="text12" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="sponsorA">SPONSOR'S ADDRESS</label>
+                        <input type="text" name="sponsorA" placeholder="Enter Sponsors Address" class="form-text" id="text13" required/>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-top: 30px;">
+                        <div style="float: left;">
+                            <input type="text" class="dash" disabled>
+                            <small style="display: block; font-weight: bold;">STUDENT'S SIGNATURE</small>
+                        </div>
+
+                        <div style=" float: right;">
+                            <input type="date" class="dash" id="text14" name="date" required>
+                            <small style="display: block; font-weight: bold;">DATE</small>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;">
+                    <p style="font-family: 'Times New Roman';">Sign with an appropriate device or visit our office</p>
+                    <p id="address" style="font-weight: bold; font-family: 'Times New Roman';">Address: Winner's road, Abraka Delta state</p>
+                    <img src="../IMAGES/Screenshot_20220804-110657_Maps.jpg" class="img-responsive myimg" alt="" id="myimg">
+                </div>
+                </div>
+                <div style="float: right;">
+                    <input type="submit" class="btn mybtn" value="Proceed"><span class="glyphicon glyphicon-chevron-right " style="color: #ff7200;"></span>
+                </div>
+            </div>
+        </form>
+        <button class="btn map" id="map">View Map <span class="glyphicon glyphicon-map-marker"></span></button>
+    </div>
+
+    <script src="../JAVASCRIPT/2ndpage.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.js"></script>
+
+</body>
+</html>

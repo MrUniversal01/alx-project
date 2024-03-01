@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.css">
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <a href="#" class="navbar-brand" style="color: #ff7200;">PaciFic-<span class="logo">Coast</span> <span class="glyphicon glyphicon-globe logo"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a onclick="details();">Data-Form</a></li>
+            <li><a onclick="details();">Clearance-Form</a></li>
+            <li><a onclick="details();">File-Upload/Acceptance</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/info.html">Screening-Info</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="bg">
+        <div class="jumbotron intro">
+          <h1 style="color: white;">Welcome to Pacific-Coast <br> <span style="color: #ff7200;">online screening portal</span></h1>
+          <p>This screening process has to be complete for you to qualify for your admmission, <br> Make sure you have the neccesary document for this screening excercise. <br>
+          This online screening would last for two week</p>
+          <p>
+            <a href="../HTML/info.html" class="btn mybtn btn-lg">Learn more</a>
+          </p>
+        </div>
+        <div class="form-box">
+          <h4 style="color: white; line-height: 25px;">Enter you details below <br> to proceed to screening page</h4>
+          <form action="../HTML/2ndpage.html" method="GET" onsubmit="return verify();">
+            <div class="form-group">
+                <input type="text" name="firstname" placeholder="Enter Firstname" class="input-line" id="firstname" required/>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="othernames" placeholder="Enter Othernames" class="input-line" id="othernames" required/>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="regnumber" placeholder="Enter Jamb reg-number" class="input-line" id="regnumber" required/>
+            </div>
+
+            <input type="submit" class="btn mybtn" value="Proceed"><span class="glyphicon glyphicon-chevron-right " style="color: #ff7200;"></span>
+          </form>
+          </div>
+        </div>
+      </div>
+    <script src="../JAVASCRIPT/index.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.js"></script>
+</body>
+</html>

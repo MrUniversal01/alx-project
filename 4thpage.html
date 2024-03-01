@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file-upload/acceptance</title>
+    <link rel="stylesheet" href="../CSS/4thpage.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.css">
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <a href="#" class="navbar-brand" style="color: #ff7200;">PaciFic-<span class="logo">Coast</span> <span class="glyphicon glyphicon-globe logo"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+          <ul class="nav navbar-nav">
+            <li><a onclick="home();">Home</a></li>
+            <li><a onclick="data();">Data-Form</a></li>
+            <li><a onclick="clearance();">Clearance-Form</a></li>
+            <li class="active"><a href="#">File-Upload/Acceptance</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/info.html">Screening-Info</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="bg">
+        <div style="margin-top: 19px;" class="container backg">
+            <div class="head" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 20px; padding-top: 9px;">FILE UPLOAD/ACCEPTANCE FORM</h3>
+            </div>
+            <h4 style="color: #ff7200; line-height: 40px;">UPLOAD A CLEAR QUALITY PHOTOGRAGH OR FILE IN THE CORRESPONDING SPACES</h4>
+            <form method="GET" onsubmit="return done();" action="../HTML/index.html">
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="acceptance-fees">EVIDENCE OF PAYMENT OF ACCEPTANC FEES</label>
+                        <input type="file" id="acceptance-fees" name="acceptance-fees" class="form-text"/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="jamb-letter">ORIGINAL JAMB ADMISSION LETTER</label>
+                        <input type="file" id="jamb-letter" name="jamb-letter" class="form-text"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="statement-of-result">SSCE/GCE/NECO ETC. STATEMENT OF RESULT</label>
+                        <input type="file" id="statement-of-result" name="statement-of-result" class="form-text"/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="refrence">LETTER OF REFRENCE FROM(Clergyman/Imam/Lawyer/Senior Civil SErvant)</label>
+                        <input type="file" name="refrence" class="form-text" id="refrence"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="birth-certificate">BIRTH CERTIFICATE/SWORN DECLERATION OF AGE</label>
+                        <input type="file" id="birth-certificate" name="birth-certificate" class="form-text"/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="state-of-origin">LOCAL GOVERNMNET OF ORIGIN OR STATE OF ORIGIN</label>
+                        <input type="file" name="state-of-origin" class="form-text" id="state-of-origin"/>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="passport">PASSPORT PHOTOGRAGH WITH RED BACKGROUND</label>
+                        <input type="file" id="passport" name="passport" class="form-text"/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="certificate">ORINGINAL CERTFICATE(If You Obtained Your WASC,NECO,etc, on or before 2018)</label>
+                        <input type="file" name="certificate" class="form-text" id="certificate"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-12 col-md-12">
+                        <label for="medical">UNIVERSITY HEALTH CENTER MEDICAL CARD</label>
+                        <input type="file" name="medical" class="form-text" id="medical"/>
+                    </div>
+                </div>
+                <br>
+                <h4 style="color: #ff7200; line-height: 40px;">ACCEPTANCE OF PROVISIONAL OFFER OF ADMISSION FOR DEGREE, DIPLOMA, SANDWICH PROGRAMME</h4>
+
+                <div>
+                    <p style="word-spacing: 2px; font-family: Verdana; line-height: 25px;"> a. &nbsp; I <input type="text" class="dash" style="width: 220px; border-width: 1px; font-weight: bold;" id="fullname"> hereby declear that the particulars stated in this form and my
+                    credentials attached are the best of my knowledge and &nbsp; &nbsp; &nbsp;  belief correct, and I understand that with-holding any information and/or giving false information may make me ineligible
+                    for registration/matriculation &nbsp; &nbsp; or lead to my exportion of this university.</p>
+                    <br>
+                    <p style="word-spacing: 2px; font-family: Verdana; line-height: 25px;">a. &nbsp; With refrence to your letter of provisional offer of admission Ref No: <input type="text" class="dash" style="width: 200px; border-width: 1px;">
+                    I hereby accept the provisional addmission into the &nbsp; &nbsp;  Pacific Coast University, for the <input type="text" class="dash" style="width: 100px; border-width: 1px; font-weight: bold" id="session"> academic session</p>
+                    <br>
+                    <p>c. &nbsp; I note that only candidates who have been certified by the bursar as having paid their fees fully are eligible to register for courses and to matriculate</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-top: 30px;">
+                        <div style="float: left;">
+                            <input type="text" class="dash">
+                            <small style="display: block; font-weight: bold;">STUDENT'S SIGNATURE</small>
+                        </div>
+
+                        <div style=" float: right;">
+                            <input type="date" class="dash" name="date" id="date">
+                            <small style="display: block; font-weight: bold;">DATE</small>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;">
+                    <p style="font-family: 'Times New Roman';">Sign with an appropriate device or visit our office</p>
+                    <p style="font-weight: bold; font-family: 'Times New Roman';">Address: Winner's road, Abraka Delta state</p>
+                    <img src="../IMAGES/Screenshot_20220804-110657_Maps.jpg" class="img-responsive myimg" alt="" id="myimg">
+                </div>
+                </div>
+                <div style="float: right;">
+                    <input type="submit" class="btn mybtn" value="Proceed"><span class="glyphicon glyphicon-chevron-right " style="color: #ff7200;"></span>
+                </div>
+            </div>
+        </form>
+        <button class="btn map" style="background-color: #ff7200; color: white;" id="map">View Map <span class="glyphicon glyphicon-map-marker"></span></button>
+    </div>
+
+    <script src="../JAVASCRIPT/4thpage.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.js"></script>
+
+</body>
+</html>

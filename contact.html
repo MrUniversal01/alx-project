@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.css">
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        
+            <a href="#" class="navbar-brand" style="color: #ff7200;">PaciFic-<span class="logo">Coast</span> <span class="glyphicon glyphicon-globe logo"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="MyNavBar">
+            <ul class="nav navbar-nav">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+                <li><a href="../HTML/info.html">Screening-Info</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row contact">
+                <center><h3 style="color: white;">GET IN TOUCH</h3></center>
+                <div class="col-lg-4 col-md-4">
+                    <center> <button class="marker"><span class="glyphicon glyphicon-map-marker"></span></button></center>
+                    <center><h4 class="head">ADDRESS</h4></center>
+                    <center><div>
+                        <p class="name">Pacific-coast main campus</p>
+                        <p>plot 145 winners road <br>Abraka CO 80223</p>
+
+                        <p class="name">Pacific-coast campus 2</p>
+                        <p>plot 56 pacific drive <br> Abraka CO 80223</p>
+
+                        <p class="name">Pacific-coast Vc's Office</p>
+                        <p>plot 185 Pacific creek <br> Abraka CO 80223</p>
+
+                    </div></center>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <center> <button class="marker" style="margin-top: 35px;"><span class="glyphicon glyphicon-phone-alt"></span></button></center>
+                    <center><h4 class="head">PHONE</h4></center>
+                    <center><div>
+                        <p class="name">ICT office</p>
+                        <p>09078132145 <br>07133234571</p>
+
+                        <p class="name">Screening Office</p>
+                        <p>08098745231<br> 08132453341 <br>07031245561</p>
+
+                        <p class="name">Emergency line</p>
+                        <p>303.438.2011 <br> (then press 2)</p>
+
+                        <p class="name">Medical center</p>
+                        <p>07016543321 <br> 08199667324 </p>
+
+                    </div></center>
+                    
+
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <center> <button class="marker"><span class="glyphicon glyphicon-envelope"></span></button></center>
+                    <center><h4 class="head">EMAIL</h4></center>
+                    <center><div>
+                        <p class="name">Inquiry</p>
+                        <p>info@pacificcoast.com</p>
+
+                        <p class="name">Complaints</p>
+                        <p>complaints@pacificcoast.com</p>
+
+                        <p class="name">Reports/Suggestions</p>
+                        <p>reports@pacificcoast.com</p>
+
+                        <div>
+                            <img src="../IMAGES/download.svg" alt=".." id="whatsapp">
+                            <p class="name">Whatsapp</p>
+                            <p>09011345562 <br> 08165456722 <br>09132435166</p>
+                        </div>
+                    </div></center>
+                   
+
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-lg-6 col-md-6">
+                   <center><h3 style="color: #ff7200;">GET UPDATED</h3>
+                    <p>To get updated about school sessions, school activities, school news. <br> fill in your details and you would be updated via Email</p></center>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <form action="../HTML/index.html" method="GET" name="form">
+                        <div class="form-group col-lg-3 col-md-3">
+                            <label for="surname">FIRSTNAME</label>
+                            <input type="text" name="firstname" placeholder="Enter firstname" class="form-text" id="firstname" required/>
+                        </div>
+
+                        <div class="form-group col-lg-3 col-md-3">
+                            <label for="surname">LASTNAME</label>
+                            <input type="text" name="lastname" placeholder="Enter lastname" class="form-text" id="lastname" required/>
+                        </div>
+
+                         <div class="form-group col-lg-6 col-md-6">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" placeholder="Enter email" class="form-text" id="email" style="width: 92%;" required/>
+                                <input type="submit" value="SUBMIT" class="btn mybtn" onclick="validateemail(document.form.email)">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="../JAVASCRIPT/contact.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearance form</title>
+    <link rel="stylesheet" href="../CSS/3rdpage.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.css">
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <a href="#" class="navbar-brand" style="color: #ff7200;">PaciFic-<span class="logo">Coast</span> <span class="glyphicon glyphicon-globe logo"></span></a></div>
+        <div class="collapse navbar-collapse" id="MyNavBar">
+          <ul class="nav navbar-nav">
+            <li><a onclick="home();">Home</a></li>
+            <li><a onclick="data();">Data-Form</a></li>
+            <li class="active"><a href="#">Clearance-Form</a></li>
+            <li><a onclick="complete();">File-Upload/Acceptance</a></li>
+            <li><a onclick="contact();">Contact</a></li>
+            <li><a onclick="info();">Screening-Info</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="bg">
+        <div style="margin-top: 19px;" class="container backg">
+            <div class="head" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 20px; padding-top: 9px;">CLEARANCE FORM</h3>
+            </div>
+            <form action="../HTML/4thpage.html" method="GET">
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="surname">SURNAME</label>
+                        <input type="text" name="surname" placeholder="Enter Surname" class="form-text" id="text0" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="othernames">OTHER NAMES IN FULL</label>
+                        <input type="text" name="othernames" placeholder="Enter Othernames" class="form-text" id="text1" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="birth">DATE OF BIRTH</label>
+                        <input type="date" name="birth" class="form-text" id="text21" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="birthplace">PLACE OF BIRTH</label>
+                        <input type="text" name="birthplace" placeholder="Enter Place of Birth" class="form-text" id="text2" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="address">CONTACT ADDRESS</label>
+                        <input type="text" name="address" class="form-text" id="text3" placeholder="Enter Contact Address" required/>
+                    </div>
+
+                    <div class="form-group  col-lg-6 col-md-6">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" name="phone" class="form-text" id="text4" required/>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="form-group col-lg-6 col-md-6">
+                    <label for="state">STATE OF ORIGIN</label>
+                    <input type="text" name="state" placeholder="Enter State" class="form-text" id="text5" required/>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6">
+                    <label for="lga">L.G.A</label>
+                    <input type="text" name="lga" placeholder="Enter Local Government Area" class="form-text" id="text6" required/>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="mode">MODE OF ENTRY</label>
+                        <select name="mode" id="mode" class="form-text" required>
+                            <option value="utme">Utme</option>
+                            <option value="jupeb">Jupeb</option>
+                            <option value="predegree">Pre-degree</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="entryyear">YEAR OF ENTRY(example 2021/2022)</label>
+                        <input type="text" name="entryyear" placeholder="Enter Year Of Entry" class="form-text" id="text7" required/>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="faculty">FACULTY</label>
+                        <input type="text" name="faculty" placeholder="Enter Faculty" class="form-text" id="text8" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="department">DEPARTMENT</label>
+                        <input type="text" name="department" placeholder="Enter Department" class="form-text" id="text9" required/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label for="degree">DEGREE/DIPLOMA IN VIEW</label>
+                        <input type="text" name="degree" placeholder="Enter Degree/Diploma In view" class="form-text" id="text10" required/>
+                    </div>
+                </div>
+
+                <h3 style="color: #ff7200; line-height: 40px;">QUALIFICATION ON ENTRY(Transfer/new students only) <br> (WASC/GCE/SSCE/NECO)</h3>
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="marketing">MARKETING</label>
+                        <select name="marketing" id="marketing" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="marketing-year">.</label>
+                        <input type="number" name="marketing-year" placeholder="Year Written" class="form-text" id="-text11" required/>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="economics">ECONOMICS</label>
+                        <select name="economics" id="economics" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="economics-year">.</label>
+                        <input type="number" name="economics-year" placeholder="Year Written" class="form-text" id="text12" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="government">GOVERNMENT</label>
+                        <select name="government" id="government" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="government-year">.</label>
+                        <input type="number" name="government-year" placeholder="Year Written" class="form-text" id="text13" required/>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="civicEducation">CIVIC EDUCATION</label>
+                        <select name="civicEducation" id="civicEducation" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="civicEducation-year">.</label>
+                        <input type="number" name="civicEducation-year" placeholder="Year Written" class="form-text" id="text14" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="english">ENGLISH LANGUAGE</label>
+                        <select name="english" id="english" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="english-year">.</label>
+                        <input type="number" name="english-year" placeholder="Year Written" class="form-text" id="text15" required/>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="mathematics">GENERAL MATHEMATICS</label>
+                        <select name="mathematics" id="mathematics" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="mathematics-year">.</label>
+                        <input type="number" name="mathematics-year" placeholder="Year Written" class="form-text" id="text16" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="biology">BIOLOGY</label>
+                        <select name="biology" id="biology" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="biology-year">.</label>
+                        <input type="number" name="biology-year" placeholder="Year Written" class="form-text" id="text17" required/>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="chemistry">CHEMISTRY</label>
+                        <select name="chemistry" id="chemistry" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="chemistry-year">.</label>
+                        <input type="number" name="chemistry-year" placeholder="Year Written" class="form-text" id="18" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="physics">PHYSICS</label>
+                        <select name="physics" id="physics" class="form-text" required>
+                            <option value="a1">A1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c4">C4</option>
+                            <option value="c5">C5</option>
+                            <option value="c6">C6</option>
+                            <option value="d7">D7</option>
+                            <option value="d8">D8</option>
+                            <option value="f9">F9</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-lg-3 col-md-3">
+                        <label for="physics-year">.</label>
+                        <input type="number" name="physics-year" placeholder="Year Written" class="form-text" id="19" required/>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6">
+                        <label for="examination-number">.</label>
+                        <input type="number" name="examination-number" placeholder="Examination Number" class="form-text" id="text22" required/>
+                    </div>
+                </div>
+
+
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-top: 30px;">
+                        <div style="float: left;">
+                            <input type="text" class="dash">
+                            <small style="display: block; font-weight: bold;">STUDENT'S SIGNATURE</small>
+                        </div>
+
+                        <div style=" float: right;">
+                            <input type="date" class="dash" id="text20" name="date" required>
+                            <small style="display: block; font-weight: bold;">DATE</small>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;">
+                    <p style="font-family: 'Times New Roman';">Sign with an appropriate device or visit our office</p>
+                    <p style="font-weight: bold; font-family: 'Times New Roman';">Address: Winner's road, Abraka Delta state</p>
+                    <img src="../IMAGES/Screenshot_20220804-110657_Maps.jpg" class="img-responsive myimg" alt="" id="myimg">
+                </div>
+                </div>
+                <div style="float: right;">
+                    <input type="submit" class="btn mybtn" value="Proceed"><span class="glyphicon glyphicon-chevron-right " style="color: #ff7200;"></span>
+                </div>
+            </div>
+        </form>
+        <button class="btn map" style="background-color: #ff7200; color: white;" id="map">View Map <span class="glyphicon glyphicon-map-marker"></span></button>
+    </div>
+
+    <script src="../JAVASCRIPT/3rdpage.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.js"></script>
+
+</body>
+</html>
